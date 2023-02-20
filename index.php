@@ -7,19 +7,13 @@
  */
 
 
-
-/**
- * 框架核心
- */
 if (version_compare(PHP_VERSION, '7.3.0','<')) {
     header("Content-Type: text/html; charset=UTF-8");
     echo 'PHP环境不能低于7.3.0';
     exit;
 }
 
-spl_autoload_register(function ($class){
-    var_dump($class);
-});
+
 define('APP_PATH', __DIR__ . '/app/');
 // 加载框架引导文件
 require __DIR__ . '/hy/app.php';

@@ -13,3 +13,6 @@ define('hy_start_time', microtime(true));
 //分配给 PHP 的内存量
 define('hy_start_menu', memory_get_usage());
 defined('CONF_PATH') or define('CONF_PATH', APP_PATH.'config'); // 配置文件目录
+
+//引入路由
+require 'routes/web.php';
